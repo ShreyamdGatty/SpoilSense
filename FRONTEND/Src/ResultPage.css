@@ -1,0 +1,83 @@
+/* Background */
+.result-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card container */
+.result-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+/* Prediction message */
+.result-message {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Action buttons layout */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Base style for all buttons */
+.btn {
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Button hover effects */
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Use It button */
+.btn.use {
+  background-color: #28a745;
+}
+
+/* Donate button */
+.btn.donate {
+  background-color: #007bff;
+}
+
+/* Throw button */
+.btn.throw {
+  background-color: #dc3545;
+}
+
+/* Animation for the result card */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

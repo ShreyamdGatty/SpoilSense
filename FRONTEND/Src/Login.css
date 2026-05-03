@@ -1,0 +1,91 @@
+/* Full screen center wrapper */
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f8f9fa, #dbeafe);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Login form box */
+.login-box {
+  background-color: #ffffff;
+  padding: 40px 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+}
+
+/* Heading */
+.login-box h2 {
+  margin-bottom: 25px;
+  font-size: 26px;
+  color: #1e3a8a;
+}
+
+/* Input fields */
+.login-box input {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 10px 0;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+/* Submit button */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-box button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+.login-box button:hover:not(:disabled) {
+  background-color: #1e40af;
+}
+
+/* Login message */
+.login-msg {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #dc2626;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 30px 20px;
+    max-width: 90%;
+  }
+
+  .login-box h2 {
+    font-size: 22px;
+  }
+
+  .login-box input,
+  .login-box button {
+    font-size: 14px;
+  }
+}
